@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Character Encoding & Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Configuration -->
+  <title>Funngro Business | Hire Top Gen Z & Teen Freelance Talent</title>
+  <meta name="description" content="Hire teen talent, affordable freelance developers, Gen Z marketing specialists. Scale your digital output with pre-vetted, digitally native freelance prodigies at 60% lower costs.">
+  <meta name="keywords" content="hire teen talent, affordable freelance developers, Gen Z marketing specialists, student freelancers, outsource social media, on-demand QA testers, content creators">
+  <meta name="author" content="Funngro Enterprise">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://funngro.com/company.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://funngro.com/company.html">
+  <meta property="og:title" content="Funngro Business | Hire Top Gen Z & Teen Freelance Talent">
+  <meta property="og:description" content="Access 15,000+ verified Gen Z digital natives for authentic social campaigns, UI testing, content sprints, and creative execution.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Funngro Business | Hire Top Gen Z & Teen Freelance Talent">
+  <meta name="twitter:description" content="Scale your business with agile, passionate Gen Z digital natives. Fast delivery, verified skills, and guaranteed quality.">
+
+  <!-- Favicon & Brand Color -->
+  <meta name="theme-color" content="#0B132B">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Custom Brand Theme Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B132B',       // Primary Canvas Bg
+              charcoal: '#111827',   // Secondary Section Bg
+              surface: '#1F2937',
+              green: '#10B981',      // Hyper Accent / Vivid Cyber Green
+              emerald: '#059669',
+              teal: '#14B8A6',
+              cyan: '#06B6D4'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Three.js r128 CDN for Live 3D WebGL Graphic Pipeline -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Project Style System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#0B132B] text-gray-100 antialiased selection:bg-emerald-500 selection:text-white min-h-screen flex flex-col cyber-grid-bg">
+
+  <!-- ==========================================================================
+       GLOBAL ACCESSIBLE NAVIGATION MODULE
+       ========================================================================== -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav border-b border-white/10" aria-label="Main Navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Portal Identifier -->
+        <div class="flex items-center gap-4">
+          <a href="company.html" class="flex items-center gap-3 group" aria-label="Funngro Business Home">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-cyan to-brand-green flex items-center justify-center font-black text-brand-navy text-xl shadow-lg shadow-brand-cyan/30 group-hover:scale-105 transition-transform duration-200">
+              F
+            </div>
+            <div class="flex flex-col">
+              <span class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-1.5">
+                Funngro
+                <span class="text-xs px-2 py-0.5 rounded-full bg-brand-cyan/20 text-brand-cyan border border-brand-cyan/30 font-semibold uppercase tracking-wider">Business</span>
+              </span>
+              <span class="text-[10px] text-gray-400 font-medium tracking-wide">Enterprise Talent Infrastructure</span>
+            </div>
+          </a>
+
+          <!-- Quick Portal Switcher Pills -->
+          <div class="hidden md:flex items-center bg-[#111827]/80 p-1 rounded-full border border-white/10 ml-6" role="tablist" aria-label="Portal Mode">
+            <a href="teen.html" class="px-4 py-1.5 rounded-full text-xs font-semibold text-gray-400 hover:text-white transition-all duration-200" aria-selected="false" role="tab">
+              For Teens
+            </a>
+            <a href="company.html" class="px-4 py-1.5 rounded-full text-xs font-semibold bg-brand-green text-brand-navy shadow-md transition-all duration-200" aria-selected="true" role="tab">
+              For Companies
+            </a>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#growth-matrix" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Growth Matrix</a>
+          <a href="#talent-solutions" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Solutions</a>
+          <a href="#vetting" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Vetting Protocol</a>
+          <a href="#roi-calculator" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">ROI Calculator</a>
+          <a href="#case-studies" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Case Studies</a>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="teen.html" class="text-xs font-medium text-gray-300 hover:text-white px-3 py-2 transition-colors border border-transparent hover:border-white/10 rounded-lg">
+            Teen Portal &rarr;
+          </a>
+          <button data-open-modal="company-hire-modal" class="relative group overflow-hidden px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all duration-200 cyber-glow-sm hover:scale-[1.02] active:scale-[0.98]">
+            <span class="relative z-10 flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+              </svg>
+              Post Project Brief
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg bg-gray-800 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-green" aria-label="Toggle Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Dropdown -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden glass-card border-t border-white/10 px-4 pt-3 pb-6 space-y-3">
+      <div class="flex items-center bg-[#111827] p-1 rounded-full border border-white/10 mb-4">
+        <a href="teen.html" class="flex-1 text-center py-2 rounded-full text-xs font-semibold text-gray-400">For Teens</a>
+        <a href="company.html" class="flex-1 text-center py-2 rounded-full text-xs font-semibold bg-brand-green text-brand-navy">For Companies</a>
+      </div>
+      <a href="#growth-matrix" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Growth Matrix</a>
+      <a href="#talent-solutions" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Solutions</a>
+      <a href="#vetting" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Vetting Protocol</a>
+      <a href="#roi-calculator" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">ROI Calculator</a>
+      <a href="#case-studies" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Case Studies</a>
+      <div class="pt-2">
+        <button data-open-modal="company-hire-modal" class="w-full text-center py-3 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 shadow-lg">
+          Post Project Brief
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO CLUSTER: PROFESSIONAL HIGH-TRUST SPLIT SCREEN
+       ========================================================================== -->
+  <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden flex-shrink-0">
+    <div class="absolute top-1/4 -right-48 w-96 h-96 bg-brand-cyan/15 rounded-full filter blur-[130px] pointer-events-none"></div>
+    <div class="absolute top-1/3 -left-48 w-96 h-96 bg-brand-green/15 rounded-full filter blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Corporate Scaling Value Proposition -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-semibold text-brand-cyan border border-brand-cyan/30 animate-pulse-glow">
+            <span class="flex h-2 w-2 rounded-full bg-brand-cyan"></span>
+            Enterprise On-Demand Talent Solution
+          </div>
+
+          <!-- Semantic H1 Header -->
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+            Hire Top Gen Z &amp; <br>
+            <span class="gradient-text-corporate text-glow">Teen Freelancers.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-normal leading-relaxed">
+            Accelerate your growth with India's largest network of digitally native Gen Z creators, developers, and researchers. Get high-impact project execution with 
+            <span class="text-brand-green font-semibold">60% cost reduction</span> and zero long-term payroll overhead.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button data-open-modal="company-hire-modal" class="magnetic-btn px-8 py-4 rounded-xl font-bold text-base bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all duration-300 cyber-glow hover:scale-105 active:scale-95 flex items-center gap-3">
+              <span class="magnetic-btn-inner flex items-center gap-2">
+                <span>Post Your First Project</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </span>
+            </button>
+
+            <a href="#roi-calculator" class="magnetic-btn px-6 py-4 rounded-xl font-semibold text-base text-gray-300 hover:text-white glass-card border border-white/10 hover:border-brand-green/40 transition-all duration-300 flex items-center gap-2.5">
+              <span class="magnetic-btn-inner flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+                Calculate Project ROI
+              </span>
+            </a>
+          </div>
+
+          <!-- Enterprise Guarantees -->
+          <div class="pt-4 grid grid-cols-3 gap-6 border-t border-white/10 max-w-xl">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-white">48 Hours</div>
+              <div class="text-xs text-gray-400 mt-0.5">Average Talent Match</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-green">100%</div>
+              <div class="text-xs text-gray-400 mt-0.5">Quality Satisfaction Escrow</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-cyan">Zero</div>
+              <div class="text-xs text-gray-400 mt-0.5">Recruiter Commission</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Three.js 3D Viewport Canvas -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative w-full aspect-square max-w-lg mx-auto rounded-3xl glass-card overflow-hidden border border-brand-cyan/30 shadow-2xl p-4">
+            
+            <!-- Live WebGL Canvas Target Container -->
+            <div id="company-hero-webgl" class="webgl-canvas-container" aria-label="Interactive 3D Holographic Global Talent Arc Network"></div>
+
+            <!-- Overlay Corporate Metrics Badge -->
+            <div class="absolute top-6 left-6 z-20 canvas-hud-badge px-3.5 py-2 rounded-xl text-xs font-semibold text-white flex items-center gap-2 pointer-events-none border border-brand-cyan/40 shadow-lg backdrop-blur-md">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-cyan animate-pulse"></span>
+              Global Talent Mesh Active
+            </div>
+
+            <div class="absolute bottom-6 right-6 z-20 glass-card px-4 py-3 rounded-2xl text-xs border border-white/10 shadow-xl max-w-[220px] pointer-events-none animate-float backdrop-blur-md">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                <span class="font-bold text-white">Enterprise Sprint Finished</span>
+              </div>
+              <p class="text-gray-400 text-[11px]">80 App QA Test Reports delivered to SaaS client in 36 hours</p>
+            </div>
+
+            <!-- Live 3D Interactive Control HUD Badge -->
+            <div class="absolute bottom-4 left-6 z-20 canvas-hud-badge px-3 py-1.5 rounded-lg text-[11px] text-gray-300 font-medium flex items-center gap-2 pointer-events-none border border-white/10">
+              <span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+              <span>Drag to Rotate &bull; Click to Pulse Network Telemetry</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="flex-grow space-y-24 lg:space-y-36 pb-24">
+
+    <!-- ========================================================================
+         SECTION 1: GROWTH MATRIX (AUTOMATED PROGRESSIVE VALUE-INCREMENT TICKER)
+         ======================================================================== -->
+    <section id="growth-matrix" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="matrix-heading">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-item">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-2 block">Proven Impact</span>
+        <h2 id="matrix-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Enterprise Performance Metrics
+        </h2>
+        <p class="mt-4 text-gray-400 text-base sm:text-lg">
+          Our verified progressive counter engine validates real business results achieved by over 800+ growing companies.
+        </p>
+      </div>
+
+      <!-- Growth Matrix Grid with Dynamic Counter Engine Attributes & Spotlight Effects -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 tilt-card-container">
+        
+        <!-- Metric 1: Verified Talents -->
+        <div class="tilt-card spotlight-card p-8 rounded-3xl border border-white/10 space-y-3 reveal-item text-center">
+          <div class="tilt-card-inner">
+            <div class="text-4xl sm:text-5xl font-black text-brand-green tracking-tight tilt-depth-title">
+              <span class="counter-val" data-target="15000" data-duration="2400" data-suffix="+">0</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2 tilt-depth-body">Verified Gen Z Talents</h3>
+            <p class="text-xs text-gray-400 mt-1 tilt-depth-footer">Pre-assessed across writing, design, social media, and QA coding skills.</p>
+          </div>
+        </div>
+
+        <!-- Metric 2: Quality Rating -->
+        <div class="tilt-card spotlight-card p-8 rounded-3xl border border-white/10 space-y-3 reveal-item delay-100 text-center">
+          <div class="tilt-card-inner">
+            <div class="text-4xl sm:text-5xl font-black text-brand-cyan tracking-tight tilt-depth-title">
+              <span class="counter-val" data-target="4.9" data-duration="2000" data-decimals="1" data-suffix="/5">0</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2 tilt-depth-body">Client Quality Score</h3>
+            <p class="text-xs text-gray-400 mt-1 tilt-depth-footer">Measured across 25,000+ completed corporate milestones and deliverables.</p>
+          </div>
+        </div>
+
+        <!-- Metric 3: Cost Efficiency -->
+        <div class="tilt-card spotlight-card p-8 rounded-3xl border border-white/10 space-y-3 reveal-item delay-200 text-center">
+          <div class="tilt-card-inner">
+            <div class="text-4xl sm:text-5xl font-black text-emerald-400 tracking-tight tilt-depth-title">
+              <span class="counter-val" data-target="60" data-duration="2000" data-suffix="%">0</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2 tilt-depth-body">Average Cost Reduction</h3>
+            <p class="text-xs text-gray-400 mt-1 tilt-depth-footer">Compared to traditional creative agencies and full-time hiring agency retainers.</p>
+          </div>
+        </div>
+
+        <!-- Metric 4: Turnaround Time -->
+        <div class="tilt-card spotlight-card p-8 rounded-3xl border border-white/10 space-y-3 reveal-item delay-300 text-center">
+          <div class="tilt-card-inner">
+            <div class="text-4xl sm:text-5xl font-black text-purple-400 tracking-tight tilt-depth-title">
+              <span class="counter-val" data-target="48" data-duration="2000" data-suffix="h">0</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2 tilt-depth-body">Average Turnaround</h3>
+            <p class="text-xs text-gray-400 mt-1 tilt-depth-footer">Rapid project kickoff, iterative draft reviews, and final sign-off cycles.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: CORPORATE TALENT SOLUTIONS (USE CASES)
+         ======================================================================== -->
+    <section id="talent-solutions" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="solutions-heading">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-item">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">Strategic Agility</span>
+          <h2 id="solutions-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Tailored For Modern High-Velocity Teams
+          </h2>
+          <p class="mt-4 text-gray-400 text-base">
+            Solve operational bottlenecks, generate authentic cultural content, and deploy scalable testing squads with ease.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Solution 1: Authentic Social & Meme Sprints -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-5 reveal-item">
+          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-2xl">
+            🔥
+          </div>
+          <h3 class="text-2xl font-bold text-white">Gen Z Brand Campaigns</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Stop relying on out-of-touch agency scripts. Tap into genuine teenagers who know current slang, audio hooks, and viral formats natively.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-400 pt-2 border-t border-white/10">
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Authentic UGC reels &amp; Shorts
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Campus ambassador brand distribution
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Trend research &amp; consumer sentiment audits
+            </li>
+          </ul>
+        </article>
+
+        <!-- Solution 2: QA & Multi-Device Testing Squads -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-cyan/40 transition-all space-y-5 reveal-item delay-100">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-2xl">
+            🧪
+          </div>
+          <h3 class="text-2xl font-bold text-white">Multi-Device QA Testing</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Deploy 50 to 500 tech-savvy teenagers to stress-test your Android/iOS builds across hundreds of real phone models simultaneously.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-400 pt-2 border-t border-white/10">
+            <li class="flex items-center gap-2">
+              <span class="text-brand-cyan font-bold">&check;</span> Detailed bug recordings with device logs
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-cyan font-bold">&check;</span> Real-world UI/UX usability feedback
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-cyan font-bold">&check;</span> Rapid overnight regression sweeps
+            </li>
+          </ul>
+        </article>
+
+        <!-- Solution 3: High-Volume Content & Design Assets -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-5 reveal-item delay-200">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-2xl">
+            🎨
+          </div>
+          <h3 class="text-2xl font-bold text-white">High-Volume Content Sprints</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Need 100 SEO articles, 50 localized banner variations, or AI data labeling? Scale production capacity without expanding your full-time headcount.
+          </p>
+          <ul class="space-y-2 text-xs text-gray-400 pt-2 border-t border-white/10">
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Rapid turnaround structured sprints
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Strict editorial quality checks
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-brand-green font-bold">&check;</span> Full commercial IP transfer rights
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: 4-STAGE VETTING & QUALITY ASSURANCE PROTOCOL
+         ======================================================================== -->
+    <section id="vetting" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="vetting-heading">
+      <div class="glass-card rounded-3xl p-8 lg:p-14 border border-brand-green/20 relative overflow-hidden">
+        
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">Institutional Quality Control</span>
+          <h2 id="vetting-heading" class="text-3xl sm:text-4xl font-extrabold text-white">
+            The 4-Stage Funngro Vetting Protocol
+          </h2>
+          <p class="mt-4 text-gray-400 text-base">
+            Only the top 15% of teen applicants are certified to work on live enterprise client briefs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-brand-navy/70 border border-white/10 space-y-3">
+            <div class="text-xs font-bold text-brand-green uppercase tracking-wider">Stage 01</div>
+            <h4 class="text-lg font-bold text-white">Micro-Skill Exams</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Every applicant undergoes objective testing in grammar, visual design rules, or software mechanics.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-navy/70 border border-white/10 space-y-3">
+            <div class="text-xs font-bold text-brand-teal uppercase tracking-wider">Stage 02</div>
+            <h4 class="text-lg font-bold text-white">Mentor Code &amp; Copy Audit</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Senior industry mentors review test submissions for technical rigor and originality before approving accounts.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-navy/70 border border-white/10 space-y-3">
+            <div class="text-xs font-bold text-brand-cyan uppercase tracking-wider">Stage 03</div>
+            <h4 class="text-lg font-bold text-white">Parent &amp; ID Verification</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Complete KYC and verified guardian consent are recorded for every teen to uphold absolute legal compliance.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-navy/70 border border-white/10 space-y-3">
+            <div class="text-xs font-bold text-purple-400 uppercase tracking-wider">Stage 04</div>
+            <h4 class="text-lg font-bold text-white">Escrow Quality Lock</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Funds are held safely in escrow and only released when the company approves the deliverables in full.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: ENTERPRISE ROI & COST SAVINGS CALCULATOR
+         ======================================================================== -->
+    <section id="roi-calculator" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="roi-heading">
+      <div class="glass-card rounded-3xl p-8 lg:p-14 border border-white/10 relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan block">ROI Calculator</span>
+            <h2 id="roi-heading" class="text-3xl sm:text-4xl font-extrabold text-white">
+              Estimate Your Project Cost Savings
+            </h2>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+              Compare Funngro's agile Gen Z talent network against traditional agency retainer fees and agency markups.
+            </p>
+
+            <div class="space-y-6 pt-4">
+              <!-- Select Project Scope -->
+              <div>
+                <label for="company-calc-type" class="block text-sm font-semibold text-gray-200 mb-2">
+                  Project Domain:
+                </label>
+                <select id="company-calc-type" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white font-medium focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none text-sm">
+                  <option value="reels" selected>Social Media UGC Reel Campaign</option>
+                  <option value="qa">Mobile App QA Bug Bounty Testing</option>
+                  <option value="content">SEO Blog &amp; Content Sprint</option>
+                  <option value="ui">UI/UX Landing Page Prototype</option>
+                </select>
+              </div>
+
+              <!-- Quantity of Deliverables -->
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-2">
+                  <span class="text-gray-200">Volume of Deliverables / Testers:</span>
+                  <span id="volume-display" class="text-brand-green font-bold text-base">10 Units</span>
+                </div>
+                <input id="volume-slider" type="range" min="5" max="50" value="10" step="5" 
+                  class="w-full h-2.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-brand-green"
+                  aria-label="Volume of deliverables or testers">
+                <div class="flex justify-between text-[11px] text-gray-500 mt-1">
+                  <span>5 Units (Pilot)</span>
+                  <span>25 Units (Growth)</span>
+                  <span>50 Units (Scale)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Savings Summary Card -->
+          <div class="lg:col-span-6">
+            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-brand-charcoal to-[#0d1b3e] border border-brand-cyan/30 shadow-2xl space-y-8 text-center relative overflow-hidden">
+              <div class="absolute -top-16 -right-16 w-40 h-40 bg-brand-cyan/10 rounded-full blur-2xl"></div>
+
+              <div>
+                <span class="text-xs uppercase tracking-widest text-gray-400 font-bold block mb-1">Estimated Budget on Funngro</span>
+                <div id="company-cost-display" class="text-5xl sm:text-6xl font-black text-brand-green tracking-tight py-2">
+                  ₹20,000
+                </div>
+                <p class="text-xs text-gray-400">Fixed milestone price &bull; Escrow protected</p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                <div class="p-4 rounded-xl bg-brand-navy/60 border border-white/5">
+                  <div class="text-xs text-gray-400">Traditional Agency Cost</div>
+                  <div id="agency-cost-display" class="text-xl font-bold text-red-400 line-through mt-1">₹55,000</div>
+                </div>
+                <div class="p-4 rounded-xl bg-brand-navy/60 border border-white/5">
+                  <div class="text-xs text-gray-400">Direct Capital Saved</div>
+                  <div id="savings-display" class="text-xl font-bold text-brand-cyan mt-1">₹35,000 (63%)</div>
+                </div>
+              </div>
+
+              <button data-open-modal="company-hire-modal" class="w-full py-4 rounded-xl font-bold text-base bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all cyber-glow">
+                Start This Project Now
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: CORPORATE CASE STUDIES (PROVEN ENTERPRISE ROI)
+         ======================================================================== -->
+    <section id="case-studies" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="cases-heading">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-item">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">Case Studies</span>
+        <h2 id="cases-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          How Top Brands Accelerate with Funngro
+        </h2>
+        <p class="mt-4 text-gray-400 text-base sm:text-lg">
+          Read real outcomes from companies scaling customer acquisition and product development.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Case 1 -->
+        <article class="glass-card p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-6 reveal-item">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30">
+              D2C Healthy Snack Brand
+            </span>
+            <span class="text-xs text-gray-400">Bangalore, India</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white">
+            "We generated 1.2M organic Instagram impressions in 2 weeks using 25 teen meme creators."
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            "Instead of paying an agency ₹2,00,000 for sterile ad creatives, Funngro matched us with Gen Z creators who produced organic product memes and school campus taste tests that went truly viral."
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+            <span class="text-brand-green font-bold">ROI: 4.8x Ad Spend</span>
+            <span class="text-gray-400">Total Project Cost: ₹45,000</span>
+          </div>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="glass-card p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-brand-cyan/40 transition-all space-y-6 reveal-item delay-100">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold px-3 py-1 rounded-full bg-cyan-500/10 text-brand-cyan border border-cyan-500/30">
+              Fast-Growing EdTech Platform
+            </span>
+            <span class="text-xs text-gray-400">Gurugram, India</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white">
+            "Uncovered 42 critical UI bugs before our nationwide Android app release."
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            "We needed testers across low-end Xiaomi, Samsung, and Realme phones. Funngro activated 60 student testers who provided annotated screen recordings and reproduction steps within 24 hours."
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+            <span class="text-brand-cyan font-bold">Release Launch Saved: 100% on schedule</span>
+            <span class="text-gray-400">Turnaround: 24 Hours</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       GLOBAL ACCESSIBLE FOOTER
+       ========================================================================== -->
+  <footer class="bg-brand-charcoal border-t border-white/10 pt-16 pb-12 mt-auto" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="company.html" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-cyan to-brand-green flex items-center justify-center font-black text-brand-navy text-lg">
+              F
+            </div>
+            <span class="text-2xl font-extrabold text-white">Funngro Business</span>
+          </a>
+          <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
+            The next-generation enterprise freelance network bridging agile businesses with certified Gen Z digital creators and developers.
+          </p>
+          <div class="text-xs text-brand-cyan font-semibold">
+            &bull; Enterprise-grade compliance &amp; escrow assurance
+          </div>
+        </div>
+
+        <!-- Column 1: Enterprise Solutions -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">Enterprise</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#growth-matrix" class="hover:text-brand-green transition-colors">Growth Matrix</a></li>
+            <li><a href="#talent-solutions" class="hover:text-brand-green transition-colors">Talent Solutions</a></li>
+            <li><a href="#vetting" class="hover:text-brand-green transition-colors">Vetting Protocol</a></li>
+            <li><a href="#roi-calculator" class="hover:text-brand-green transition-colors">Cost Calculator</a></li>
+            <li><a href="#case-studies" class="hover:text-brand-green transition-colors">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Teen Portal Link -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">For Freelancers</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="teen.html" class="hover:text-brand-green transition-colors font-semibold text-brand-green">Teen Freelance Portal &rarr;</a></li>
+            <li><a href="teen.html#how-it-works" class="hover:text-brand-green transition-colors">How Teens Earn</a></li>
+            <li><a href="teen.html#skills-hub" class="hover:text-brand-green transition-colors">Skill Categories</a></li>
+            <li><a href="teen.html#live-projects" class="hover:text-brand-green transition-colors">Live Gigs</a></li>
+            <li><a href="teen.html#calculator" class="hover:text-brand-green transition-colors">Teen Earnings Calc</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal & Security -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">Compliance</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-brand-green transition-colors">Corporate MSA</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">IP Assignment Terms</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Data Privacy &amp; GDPR</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">GST Invoicing Support</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Child Labor Prevention</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <div>&copy; 2026 Funngro Technologies Inc. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-400 transition-colors">Enterprise Terms</a>
+          <a href="#" class="hover:text-gray-400 transition-colors">Security</a>
+          <a href="#" class="hover:text-gray-400 transition-colors">Talk to Enterprise Sales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: ENTERPRISE PROJECT BRIEF INQUIRY MODAL
+       ========================================================================== -->
+  <div id="company-hire-modal" class="modal-container hidden fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="company-modal-title">
+    <div class="modal-backdrop fixed inset-0" data-close-modal></div>
+    
+    <div class="relative z-10 w-full max-w-lg glass-card bg-brand-charcoal/95 border border-brand-cyan/40 rounded-3xl p-8 shadow-2xl space-y-6">
+      
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-brand-cyan"></span>
+          <h3 id="company-modal-title" class="text-xl font-bold text-white">Post An Enterprise Project Brief</h3>
+        </div>
+        <button data-close-modal class="text-gray-400 hover:text-white p-2 rounded-lg bg-gray-800" aria-label="Close Modal">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-300">
+        Submit your project parameters. A dedicated enterprise talent manager will match vetted talent within 24 hours.
+      </p>
+
+      <form id="enterprise-brief-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Brief Received! Our enterprise account manager will reach out with a candidate portfolio within 24 hours.'); document.getElementById('company-hire-modal').classList.add('hidden');">
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Company / Startup Name</label>
+          <input type="text" required placeholder="e.g. Acme Tech Solutions" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Name</label>
+            <input type="text" required placeholder="e.g. Priya Sen" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Work Email</label>
+            <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Project Category</label>
+          <select class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+            <option>Social Media UGC &amp; Reel Creation</option>
+            <option>App / Web QA Bug Testing Squad</option>
+            <option>Content Writing &amp; SEO Sprints</option>
+            <option>Figma UI/UX Design &amp; Prototype</option>
+            <option>AI Data Labeling &amp; Prompt Engineering</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Estimated Budget (INR)</label>
+          <input type="text" placeholder="e.g. ₹25,000 - ₹50,000" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all cyber-glow">
+          Dispatch Brief to Talent Pool &rarr;
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/company-hero-3d.js"></script>
+  <script>
+    // Enterprise Cost Savings Calculator Logic
+    (function() {
+      const typeSelect = document.getElementById('company-calc-type');
+      const volumeSlider = document.getElementById('volume-slider');
+      const volumeDisplay = document.getElementById('volume-display');
+      const funngroCostDisplay = document.getElementById('company-cost-display');
+      const agencyCostDisplay = document.getElementById('agency-cost-display');
+      const savingsDisplay = document.getElementById('savings-display');
+
+      const costMatrix = {
+        reels: { funngroPerUnit: 2000, agencyPerUnit: 5500, unitLabel: 'Reels' },
+        qa: { funngroPerUnit: 800, agencyPerUnit: 2200, unitLabel: 'Testers' },
+        content: { funngroPerUnit: 1500, agencyPerUnit: 4000, unitLabel: 'Articles' },
+        ui: { funngroPerUnit: 3500, agencyPerUnit: 9000, unitLabel: 'Screens' }
+      };
+
+      function updateCalculation() {
+        if (!typeSelect || !volumeSlider) return;
+        const type = typeSelect.value;
+        const volume = parseInt(volumeSlider.value, 10);
+        const data = costMatrix[type] || costMatrix.reels;
+
+        volumeDisplay.textContent = `${volume} ${data.unitLabel}`;
+
+        const funngroTotal = volume * data.funngroPerUnit;
+        const agencyTotal = volume * data.agencyPerUnit;
+        const saved = agencyTotal - funngroTotal;
+        const percentageSaved = Math.round((saved / agencyTotal) * 100);
+
+        funngroCostDisplay.textContent = `₹${funngroTotal.toLocaleString('en-IN')}`;
+        agencyCostDisplay.textContent = `₹${agencyTotal.toLocaleString('en-IN')}`;
+        savingsDisplay.textContent = `₹${saved.toLocaleString('en-IN')} (${percentageSaved}%)`;
+      }
+
+      if (typeSelect && volumeSlider) {
+        typeSelect.addEventListener('change', updateCalculation);
+        volumeSlider.addEventListener('input', updateCalculation);
+        updateCalculation();
+      }
+    })();
+  </script>
+</body>
+</html>

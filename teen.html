@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Character Encoding & Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Configuration -->
+  <title>Funngro Teens | Earn Money & Learn Digital Freelancing Skills</title>
+  <meta name="description" content="Earn money as a teen, teen freelancing platform, online jobs for students, pocket money apps. Work on real company projects, develop in-demand digital skills, and get paid securely.">
+  <meta name="keywords" content="earn money as a teen, teen freelancing platform, online jobs for students, pocket money apps, freelance work for teens, student internships, digital skills">
+  <meta name="author" content="Funngro">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://funngro.com/teen.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://funngro.com/teen.html">
+  <meta property="og:title" content="Funngro Teens | Earn Money & Learn Digital Freelancing Skills">
+  <meta property="og:description" content="Join 100,000+ smart teens earning pocket money and mastering industry skills working with real companies.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Funngro Teens | Earn Money & Learn Digital Freelancing Skills">
+  <meta name="twitter:description" content="Turn your passion into your first income. Safe, parent-approved freelancing for Gen Z.">
+
+  <!-- Favicon & Brand Color -->
+  <meta name="theme-color" content="#0B132B">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Custom Brand Theme Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B132B',       // Primary Canvas Bg
+              charcoal: '#111827',   // Secondary Section Bg
+              surface: '#1F2937',
+              green: '#10B981',      // Hyper Accent / Vivid Cyber Green
+              emerald: '#059669',
+              teal: '#14B8A6',
+              cyan: '#06B6D4'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Three.js r128 CDN for Live 3D WebGL Graphic Pipeline -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Project Style System -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#0B132B] text-gray-100 antialiased selection:bg-emerald-500 selection:text-white min-h-screen flex flex-col cyber-grid-bg">
+
+  <!-- ==========================================================================
+       GLOBAL ACCESSIBLE NAVIGATION MODULE
+       ========================================================================== -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav border-b border-white/10" aria-label="Main Navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Portal Identifier -->
+        <div class="flex items-center gap-4">
+          <a href="teen.html" class="flex items-center gap-3 group" aria-label="Funngro Teens Home">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-green to-brand-cyan flex items-center justify-center font-black text-brand-navy text-xl shadow-lg shadow-brand-green/30 group-hover:scale-105 transition-transform duration-200">
+              F
+            </div>
+            <div class="flex flex-col">
+              <span class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-1.5">
+                Funngro
+                <span class="text-xs px-2 py-0.5 rounded-full bg-brand-green/20 text-brand-green border border-brand-green/30 font-semibold uppercase tracking-wider">Teens</span>
+              </span>
+              <span class="text-[10px] text-gray-400 font-medium tracking-wide">Earn &bull; Learn &bull; Excel</span>
+            </div>
+          </a>
+
+          <!-- Quick Portal Switcher Pills -->
+          <div class="hidden md:flex items-center bg-[#111827]/80 p-1 rounded-full border border-white/10 ml-6" role="tablist" aria-label="Portal Mode">
+            <a href="teen.html" class="px-4 py-1.5 rounded-full text-xs font-semibold bg-brand-green text-brand-navy shadow-md transition-all duration-200" aria-selected="true" role="tab">
+              For Teens
+            </a>
+            <a href="company.html" class="px-4 py-1.5 rounded-full text-xs font-semibold text-gray-400 hover:text-white transition-all duration-200" aria-selected="false" role="tab">
+              For Companies
+            </a>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#how-it-works" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">How It Works</a>
+          <a href="#skills-hub" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Skill Hub</a>
+          <a href="#live-projects" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Live Projects</a>
+          <a href="#calculator" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Earnings Calculator</a>
+          <a href="#testimonials" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Success Stories</a>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="company.html" class="text-xs font-medium text-gray-300 hover:text-white px-3 py-2 transition-colors border border-transparent hover:border-white/10 rounded-lg">
+            Hire Talent &rarr;
+          </a>
+          <button data-open-modal="teen-apply-modal" class="relative group overflow-hidden px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all duration-200 cyber-glow-sm hover:scale-[1.02] active:scale-[0.98]">
+            <span class="relative z-10 flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+              </svg>
+              Start Earning
+            </span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg bg-gray-800 text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-green" aria-label="Toggle Navigation Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Dropdown -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden glass-card border-t border-white/10 px-4 pt-3 pb-6 space-y-3">
+      <div class="flex items-center bg-[#111827] p-1 rounded-full border border-white/10 mb-4">
+        <a href="teen.html" class="flex-1 text-center py-2 rounded-full text-xs font-semibold bg-brand-green text-brand-navy">For Teens</a>
+        <a href="company.html" class="flex-1 text-center py-2 rounded-full text-xs font-semibold text-gray-400">For Companies</a>
+      </div>
+      <a href="#how-it-works" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">How It Works</a>
+      <a href="#skills-hub" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Skill Hub</a>
+      <a href="#live-projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Live Projects</a>
+      <a href="#calculator" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Earnings Calculator</a>
+      <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-brand-green/10 hover:text-brand-green">Success Stories</a>
+      <div class="pt-2">
+        <button data-open-modal="teen-apply-modal" class="w-full text-center py-3 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 shadow-lg">
+          Start Earning Today
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO CLUSTER: HEAVYWEIGHT 2-COLUMN VIEWPORT
+       ========================================================================== -->
+  <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden flex-shrink-0">
+    <!-- Atmospheric Ambient Glows -->
+    <div class="absolute top-1/4 -left-48 w-96 h-96 bg-brand-green/15 rounded-full filter blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-48 w-96 h-96 bg-brand-cyan/15 rounded-full filter blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Copy & Hyper Action CTA -->
+        <div class="lg:col-span-7 space-y-8">
+          
+          <!-- Trust Badge Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-semibold text-brand-green border border-brand-green/30 animate-pulse-glow">
+            <span class="flex h-2 w-2 rounded-full bg-brand-green"></span>
+            India's #1 Dedicated Teen Freelancing Platform
+          </div>
+
+          <!-- Semantic H1 Header -->
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+            Earn. Learn. <br>
+            <span class="gradient-text-green text-glow">Grow.</span>
+          </h1>
+
+          <!-- Value Proposition Pitch -->
+          <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-normal leading-relaxed">
+            Turn your digital creativity into real financial independence. Join over 
+            <span class="text-white font-semibold underline decoration-brand-green/60 underline-offset-4">100,000+ smart teenagers</span> 
+            working on verified paid projects for top companies while mastering future-ready skills.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button data-open-modal="teen-apply-modal" class="magnetic-btn px-8 py-4 rounded-xl font-bold text-base bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all duration-300 cyber-glow hover:scale-105 active:scale-95 flex items-center gap-3">
+              <span class="magnetic-btn-inner flex items-center gap-2">
+                <span>Start Earning Now</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </span>
+            </button>
+
+            <a href="#live-projects" class="magnetic-btn px-6 py-4 rounded-xl font-semibold text-base text-gray-300 hover:text-white glass-card border border-white/10 hover:border-brand-green/40 transition-all duration-300 flex items-center gap-2.5">
+              <span class="magnetic-btn-inner flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                </svg>
+                Explore 450+ Live Gigs
+              </span>
+            </a>
+          </div>
+
+          <!-- Micro Proof Stats Ribbon -->
+          <div class="pt-4 grid grid-cols-3 gap-6 border-t border-white/10 max-w-xl">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-white">₹1.5k+</div>
+              <div class="text-xs text-gray-400 mt-0.5">Average task payout</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-green">100%</div>
+              <div class="text-xs text-gray-400 mt-0.5">Verified Safe Companies</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-cyan">0%</div>
+              <div class="text-xs text-gray-400 mt-0.5">Registration Fees</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Three.js 3D WebGL Viewport Container -->
+        <div class="lg:col-span-5 relative">
+          <!-- Glassmorphic Decorative Frame -->
+          <div class="relative w-full aspect-square max-w-lg mx-auto rounded-3xl glass-card overflow-hidden border border-brand-green/30 shadow-2xl p-4">
+            
+            <!-- Live WebGL Canvas Target Container -->
+            <div id="teen-hero-webgl" class="webgl-canvas-container" aria-label="Interactive 3D Quantum Talent Core"></div>
+
+            <!-- Overlay Floating Live Status Micro-Cards -->
+            <div class="absolute top-6 left-6 z-20 canvas-hud-badge px-3.5 py-2 rounded-xl text-xs font-semibold text-white flex items-center gap-2 pointer-events-none border border-brand-green/40 shadow-lg backdrop-blur-md">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping"></span>
+              Quantum Core Active
+            </div>
+
+            <div class="absolute bottom-6 right-6 z-20 glass-card px-4 py-3 rounded-2xl text-xs border border-white/10 shadow-xl max-w-[210px] pointer-events-none animate-float backdrop-blur-md">
+              <div class="flex items-center gap-2 mb-1">
+                <div class="w-6 h-6 rounded-full bg-brand-green/20 text-brand-green flex items-center justify-center font-bold text-[10px]">₹</div>
+                <span class="font-bold text-white">Payout Released</span>
+              </div>
+              <p class="text-gray-400 text-[11px]">Rohan (16, Delhi) earned ₹2,400 for Social Media Creatives</p>
+            </div>
+
+            <!-- Live 3D Interactive Control HUD Badge -->
+            <div class="absolute bottom-4 left-6 z-20 canvas-hud-badge px-3 py-1.5 rounded-lg text-[11px] text-gray-300 font-medium flex items-center gap-2 pointer-events-none border border-white/10">
+              <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+              <span>Drag to Rotate &bull; Click to Pulse Shockwave</span>
+            </div>
+
+            <!-- Interactivity Hint -->
+            <div class="absolute bottom-3 left-6 z-20 text-[10px] text-gray-400 tracking-wider uppercase font-semibold flex items-center gap-1.5 opacity-75">
+              <svg class="w-3.5 h-3.5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
+              </svg>
+              Interactive 3D: Move cursor
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="flex-grow space-y-24 lg:space-y-36 pb-24">
+
+    <!-- ========================================================================
+         SECTION 1: WORKFLOW STREAM (3-STEP CONSECUTIVE CASCADE GRID)
+         ======================================================================== -->
+    <section id="how-it-works" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="workflow-heading">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-item">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">Seamless Journey</span>
+        <h2 id="workflow-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Three Simple Steps to Your First Paycheck
+        </h2>
+        <p class="mt-4 text-gray-400 text-base sm:text-lg">
+          No experience needed. We match you with company projects suited to your passion and skill level.
+        </p>
+      </div>
+
+      <!-- 3-Step Modern Grid Pipeline with Cascade Fade-In -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Connecting Line Background for Large Displays -->
+        <div class="hidden md:block absolute top-1/2 left-12 right-12 h-0.5 bg-gradient-to-r from-brand-green/30 via-brand-teal/40 to-brand-cyan/30 -translate-y-8 z-0"></div>
+
+        <!-- Step 1 -->
+        <article class="reveal-item delay-100 relative z-10 glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-2xl bg-brand-navy border border-brand-green/40 flex items-center justify-center font-black text-2xl text-brand-green shadow-lg shadow-brand-green/20 mb-6 group-hover:scale-110 transition-transform">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center justify-between">
+            Pick Your Passion
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-brand-green/10 text-brand-green border border-brand-green/30">Free</span>
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Sign up in under 2 minutes. Take quick micro-skill evaluations in Content Writing, UI Design, Social Media, Coding, or Voice Acting.
+          </p>
+          <ul class="text-xs text-gray-400 space-y-2">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              No resume required
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Free certification badges
+            </li>
+          </ul>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="reveal-item delay-200 relative z-10 glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-2xl bg-brand-navy border border-brand-teal/40 flex items-center justify-center font-black text-2xl text-brand-teal shadow-lg shadow-brand-teal/20 mb-6 group-hover:scale-110 transition-transform">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center justify-between">
+            Work on Real Brand Projects
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-brand-teal/10 text-brand-teal border border-brand-teal/30">Guided</span>
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Receive structured company briefs with clear instructions. Build real-world work alongside friendly mentor support and peer communities.
+          </p>
+          <ul class="text-xs text-gray-400 space-y-2">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Step-by-step project checklists
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Flexible deadlines around school
+            </li>
+          </ul>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="reveal-item delay-300 relative z-10 glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-2xl bg-brand-navy border border-brand-cyan/40 flex items-center justify-center font-black text-2xl text-brand-cyan shadow-lg shadow-brand-cyan/20 mb-6 group-hover:scale-110 transition-transform">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 flex items-center justify-between">
+            Get Paid Directly
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/30">Instant</span>
+          </h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            Upon client approval, your earnings are credited instantly to your teen wallet or UPI/bank account, accompanied by an official work certificate.
+          </p>
+          <ul class="text-xs text-gray-400 space-y-2">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-cyan flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Direct bank / UPI transfers
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-cyan flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Verifiable experience letters
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: SKILL HUB (INTERACTIVE 3D MOUSE-TILT ENGINE GRID)
+         ======================================================================== -->
+    <section id="skills-hub" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="skills-heading">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-item">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">High-Demand Domains</span>
+          <h2 id="skills-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Discover Your Freelancing Superpower
+          </h2>
+          <p class="mt-4 text-gray-400 text-base">
+            Hover over any category to feel our dynamic 3D card tilt engine in action. Select a domain to start claiming live gigs.
+          </p>
+        </div>
+        <div class="mt-6 md:mt-0">
+          <span class="inline-flex items-center gap-2 text-xs text-brand-green bg-brand-green/10 border border-brand-green/30 px-3.5 py-2 rounded-xl">
+            <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+            6 Domains Currently Hiring
+          </span>
+        </div>
+      </div>
+
+      <!-- 3D Tilt Grid Container with Multi-Layer Parallax Depth & Dynamic Spotlight -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 tilt-card-container">
+        
+        <!-- Skill Card 1: Content Writing & Copy -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                ✍️
+              </div>
+              <span class="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full border border-brand-green/20">
+                ₹800 - ₹2,500/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-brand-green transition-colors">
+                Content & Copywriting
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Write engaging blog articles, website copy, product reviews, and newsletter editions for emerging consumer startups.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>85 Active Open Projects</span>
+              <span class="text-brand-green font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 2: UI/UX & Web Development -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item delay-100">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                💻
+              </div>
+              <span class="text-xs font-bold text-brand-cyan bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20">
+                ₹1,800 - ₹6,000/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-brand-cyan transition-colors">
+                UI & Web Development
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Build landing pages, test website interfaces, design Figma prototypes, and implement modern Tailwind or HTML components.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>64 Active Open Projects</span>
+              <span class="text-brand-cyan font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 3: Social Media & Reels Marketing -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item delay-200">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                📱
+              </div>
+              <span class="text-xs font-bold text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">
+                ₹1,200 - ₹4,000/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                Social Media Marketing
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Create trending Instagram reels, manage TikTok/Shorts campaigns, produce memes, and curate viral community content.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>112 Active Open Projects</span>
+              <span class="text-purple-400 font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 4: Video Editing & Motion -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🎬
+              </div>
+              <span class="text-xs font-bold text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">
+                ₹1,500 - ₹5,000/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors">
+                Video Editing & Animation
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Edit engaging YouTube videos, cut fast-paced reels, add motion graphics, subtitles, and produce high-retention clips.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>78 Active Open Projects</span>
+              <span class="text-pink-400 font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 5: AI Prompting & Data Tagging -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item delay-100">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🤖
+              </div>
+              <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                ₹1,000 - ₹3,500/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                AI Prompting & Data Labelling
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Help AI startups train language models, test GenAI applications, annotate image datasets, and write creative prompts.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>52 Active Open Projects</span>
+              <span class="text-amber-400 font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 6: Voice-Over & Audio -->
+        <div class="tilt-card spotlight-card rounded-3xl p-8 border border-white/10 cursor-pointer group reveal-item delay-200">
+          <div class="tilt-card-inner space-y-6">
+            <div class="flex items-center justify-between tilt-depth-badge">
+              <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+                🎙️
+              </div>
+              <span class="text-xs font-bold text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+                ₹1,000 - ₹3,000/task
+              </span>
+            </div>
+            
+            <div class="tilt-depth-title">
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                Voice-Over & Podcasting
+              </h3>
+              <p class="text-gray-300 text-sm mt-2 leading-relaxed tilt-depth-body">
+                Lend youthful voices to brand advertisements, animated explainers, educational audiobooks, and gaming characters.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400 tilt-depth-footer">
+              <span>39 Active Open Projects</span>
+              <span class="text-blue-400 font-semibold flex items-center gap-1 group-hover:translate-x-1.5 transition-transform">
+                Apply to Gigs &rarr;
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: LIVE PROJECTS & GIGS TICKER (REAL CLIENT BRIEFS)
+         ======================================================================== -->
+    <section id="live-projects" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="live-gigs-heading">
+      <div class="glass-card rounded-3xl p-8 lg:p-12 border border-brand-green/20 relative overflow-hidden">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-10 pb-6 border-b border-white/10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-green/10 text-brand-green text-xs font-bold mb-3">
+              <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+              Live Pipeline
+            </div>
+            <h2 id="live-gigs-heading" class="text-2xl sm:text-3xl font-extrabold text-white">
+              Recently Posted Paid Projects For Teens
+            </h2>
+          </div>
+          <button data-open-modal="teen-apply-modal" class="px-5 py-2.5 rounded-xl font-bold text-xs bg-brand-green/20 text-brand-green hover:bg-brand-green hover:text-brand-navy transition-all duration-200 border border-brand-green/40 self-start lg:self-auto">
+            View All 450+ Projects &rarr;
+          </button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Project 1 -->
+          <div class="p-6 rounded-2xl bg-brand-navy/60 border border-white/10 hover:border-brand-green/40 transition-all space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Social Media</span>
+              <span class="text-sm font-bold text-brand-green">₹2,200</span>
+            </div>
+            <h4 class="text-base font-bold text-white">Create 3 Reel Concepts for D2C Beverage Brand</h4>
+            <p class="text-xs text-gray-400">Brief: Script & film 3 authentic 15-second TikTok/Reel concepts featuring daily college lifestyle.</p>
+            <div class="flex items-center justify-between text-[11px] text-gray-400 pt-2 border-t border-white/5">
+              <span>Deadline: 4 Days</span>
+              <span class="text-brand-green font-medium">8 Applicants</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="p-6 rounded-2xl bg-brand-navy/60 border border-white/10 hover:border-brand-green/40 transition-all space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-500/10 text-brand-cyan border border-cyan-500/20">Web Dev</span>
+              <span class="text-sm font-bold text-brand-green">₹4,500</span>
+            </div>
+            <h4 class="text-base font-bold text-white">QA Test & Bug Report for EdTech Mobile App</h4>
+            <p class="text-xs text-gray-400">Brief: Test student quiz features on Android/iOS, record screen bugs, and complete feedback survey.</p>
+            <div class="flex items-center justify-between text-[11px] text-gray-400 pt-2 border-t border-white/5">
+              <span>Deadline: 2 Days</span>
+              <span class="text-brand-green font-medium">14 Applicants</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="p-6 rounded-2xl bg-brand-navy/60 border border-white/10 hover:border-brand-green/40 transition-all space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Writing</span>
+              <span class="text-sm font-bold text-brand-green">₹1,800</span>
+            </div>
+            <h4 class="text-base font-bold text-white">1,200-Word Blog Post on Student Productivity Tools</h4>
+            <p class="text-xs text-gray-400">Brief: Write an engaging, well-researched guide detailing top Notion setups for high schoolers.</p>
+            <div class="flex items-center justify-between text-[11px] text-gray-400 pt-2 border-t border-white/5">
+              <span>Deadline: 3 Days</span>
+              <span class="text-brand-green font-medium">5 Applicants</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: INTERACTIVE EARNINGS SIMULATOR / CALCULATOR
+         ======================================================================== -->
+    <section id="calculator" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="calc-heading">
+      <div class="glass-card rounded-3xl p-8 lg:p-14 border border-white/10 relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-green block">Pocket Money Simulator</span>
+            <h2 id="calc-heading" class="text-3xl sm:text-4xl font-extrabold text-white">
+              How Much Can You Earn As A Teen?
+            </h2>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+              Freelancing with Funngro is designed around school schedules. Spend just a few hours during weekends and free time to build savings and financial independence.
+            </p>
+
+            <!-- Interactive Inputs -->
+            <div class="space-y-6 pt-4">
+              <!-- Weekly Hours Range -->
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-2">
+                  <span class="text-gray-200">Hours Dedicated Per Week:</span>
+                  <span id="hours-display" class="text-brand-green font-bold text-base">6 Hours</span>
+                </div>
+                <input id="hours-slider" type="range" min="2" max="20" value="6" step="1" 
+                  class="w-full h-2.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-brand-green"
+                  aria-label="Hours dedicated per week">
+                <div class="flex justify-between text-[11px] text-gray-500 mt-1">
+                  <span>2 hrs/wk (Casual)</span>
+                  <span>10 hrs/wk (Active)</span>
+                  <span>20 hrs/wk (Pro)</span>
+                </div>
+              </div>
+
+              <!-- Skill Category Selection -->
+              <div>
+                <label for="calc-category" class="block text-sm font-semibold text-gray-200 mb-2">
+                  Select Primary Skill Domain:
+                </label>
+                <select id="calc-category" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white font-medium focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none text-sm">
+                  <option value="400">Content Writing & Research (₹400/hr avg)</option>
+                  <option value="650" selected>Web & UI Design Prototyping (₹650/hr avg)</option>
+                  <option value="500">Social Media & Reel Creation (₹500/hr avg)</option>
+                  <option value="550">Video Editing & Animation (₹550/hr avg)</option>
+                  <option value="450">AI Data Annotation & Prompting (₹450/hr avg)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calculation Result Display Card -->
+          <div class="lg:col-span-6">
+            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-brand-charcoal to-[#0d1b3e] border border-brand-green/30 shadow-2xl space-y-8 text-center relative overflow-hidden">
+              <div class="absolute -top-16 -right-16 w-40 h-40 bg-brand-green/10 rounded-full blur-2xl"></div>
+
+              <div>
+                <span class="text-xs uppercase tracking-widest text-gray-400 font-bold block mb-1">Estimated Monthly Earnings</span>
+                <div id="monthly-earnings-display" class="text-5xl sm:text-6xl font-black text-brand-green tracking-tight py-2">
+                  ₹15,600
+                </div>
+                <p class="text-xs text-gray-400">Based on standard verified brand project rates</p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                <div class="p-4 rounded-xl bg-brand-navy/60 border border-white/5">
+                  <div class="text-xs text-gray-400">Annual Potential</div>
+                  <div id="annual-earnings-display" class="text-xl font-bold text-white mt-1">₹1,87,200</div>
+                </div>
+                <div class="p-4 rounded-xl bg-brand-navy/60 border border-white/5">
+                  <div class="text-xs text-gray-400">Portfolio Projects</div>
+                  <div id="projects-estimate-display" class="text-xl font-bold text-brand-cyan mt-1">8 - 12 Tasks</div>
+                </div>
+              </div>
+
+              <button data-open-modal="teen-apply-modal" class="w-full py-4 rounded-xl font-bold text-base bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all cyber-glow">
+                Claim These Gigs Today
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: REAL TEEN SUCCESS STORIES (SOCIAL PROOF)
+         ======================================================================== -->
+    <section id="testimonials" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28" aria-labelledby="testimonials-heading">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-item">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-green mb-2 block">Teen Champions</span>
+        <h2 id="testimonials-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Loved by Smart Teens Across India
+        </h2>
+        <p class="mt-4 text-gray-400 text-base sm:text-lg">
+          Read real stories from students who funded their gadgets, tuition, and startups before finishing school.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Story 1 -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-6 reveal-item">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-green to-teal-300 flex items-center justify-center font-bold text-brand-navy text-lg">
+              AK
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-base">Aarav Kapoor, 17</h4>
+              <span class="text-xs text-gray-400">UI Designer &bull; Delhi</span>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed italic">
+            "I bought my own iPad Pro with the ₹42,000 I earned building Figma wireframes for 3 startups on Funngro. The mentors helped me review client feedback every week!"
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+            <span class="text-brand-green font-bold">Total Earned: ₹42,000</span>
+            <span class="text-gray-400">14 Projects Completed</span>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-6 reveal-item delay-100">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 flex items-center justify-center font-bold text-brand-navy text-lg">
+              SM
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-base">Sneha Mukherjee, 16</h4>
+              <span class="text-xs text-gray-400">Content Writer &bull; Kolkata</span>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed italic">
+            "My parents were skeptical about online jobs at first, but Funngro's parent dashboard and direct bank transfers proved how secure and professional the platform is."
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+            <span class="text-brand-green font-bold">Total Earned: ₹28,500</span>
+            <span class="text-gray-400">19 Projects Completed</span>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="glass-card p-8 rounded-3xl border border-white/10 hover:border-brand-green/40 transition-all space-y-6 reveal-item delay-200">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-400 to-pink-500 flex items-center justify-center font-bold text-brand-navy text-lg">
+              VN
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-base">Varun Nair, 15</h4>
+              <span class="text-xs text-gray-400">Reel Editor &bull; Bengaluru</span>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed italic">
+            "Editing reels on CapCut was just a hobby. On Funngro, I made ₹18,000 during my summer vacation making promos for consumer tech companies."
+          </p>
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs">
+            <span class="text-brand-green font-bold">Total Earned: ₹18,000</span>
+            <span class="text-gray-400">8 Projects Completed</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: SAFE & PARENT-APPROVED GUARANTEE
+         ======================================================================== -->
+    <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card p-8 sm:p-12 rounded-3xl border border-brand-green/20 bg-gradient-to-r from-brand-charcoal via-brand-navy to-brand-charcoal">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-green/10 border border-brand-green/30 flex items-center justify-center text-2xl flex-shrink-0">
+              🛡️
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base">Parent Oversight Portal</h4>
+              <p class="text-xs text-gray-400 mt-1">Parents can monitor active company briefs, payments, and communications at all times.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/30 flex items-center justify-center text-2xl flex-shrink-0">
+              💼
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base">100% Vetted Companies</h4>
+              <p class="text-xs text-gray-400 mt-1">Every business must pass strict compliance before listing projects for teenagers.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl flex-shrink-0">
+              ⚡
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-base">Escrow-Secured Payments</h4>
+              <p class="text-xs text-gray-400 mt-1">Project funds are deposited in advance, guaranteeing instant payout upon completion.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       GLOBAL ACCESSIBLE FOOTER
+       ========================================================================== -->
+  <footer class="bg-brand-charcoal border-t border-white/10 pt-16 pb-12 mt-auto" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="teen.html" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-green to-brand-cyan flex items-center justify-center font-black text-brand-navy text-lg">
+              F
+            </div>
+            <span class="text-2xl font-extrabold text-white">Funngro</span>
+          </a>
+          <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
+            Empowering the next generation through financial literacy, genuine corporate exposure, and real freelance earnings.
+          </p>
+          <div class="text-xs text-brand-green font-semibold">
+            &bull; Built for ambitious teens & visionary companies
+          </div>
+        </div>
+
+        <!-- Column 1: For Teens -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">For Teens</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#how-it-works" class="hover:text-brand-green transition-colors">How It Works</a></li>
+            <li><a href="#skills-hub" class="hover:text-brand-green transition-colors">Browse Skills</a></li>
+            <li><a href="#live-projects" class="hover:text-brand-green transition-colors">Live Gigs</a></li>
+            <li><a href="#calculator" class="hover:text-brand-green transition-colors">Earnings Calculator</a></li>
+            <li><a href="#testimonials" class="hover:text-brand-green transition-colors">Student Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: For Businesses -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">For Businesses</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="company.html" class="hover:text-brand-green transition-colors font-semibold text-brand-green">Enterprise Portal &rarr;</a></li>
+            <li><a href="company.html#growth-matrix" class="hover:text-brand-green transition-colors">Talent Metrics</a></li>
+            <li><a href="company.html#vetting" class="hover:text-brand-green transition-colors">Vetting Protocol</a></li>
+            <li><a href="company.html#calculator" class="hover:text-brand-green transition-colors">ROI Estimator</a></li>
+            <li><a href="company.html#contact" class="hover:text-brand-green transition-colors">Post A Brief</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Trust & Legal -->
+        <div class="space-y-3">
+          <h5 class="text-sm font-bold text-white uppercase tracking-wider">Safety & Privacy</h5>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-brand-green transition-colors">Parent Consent Guide</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Child Safety Protocols</a></li>
+            <li><a href="#" class="hover:text-brand-green transition-colors">Escrow Security</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <div>&copy; 2026 Funngro Technologies Inc. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-400 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-gray-400 transition-colors">Security</a>
+          <a href="#" class="hover:text-gray-400 transition-colors">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: TEEN FAST-TRACK ONBOARDING MODAL
+       ========================================================================== -->
+  <div id="teen-apply-modal" class="modal-container hidden fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop fixed inset-0" data-close-modal></div>
+    
+    <div class="relative z-10 w-full max-w-lg glass-card bg-brand-charcoal/95 border border-brand-green/40 rounded-3xl p-8 shadow-2xl space-y-6">
+      
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-brand-green"></span>
+          <h3 id="modal-title" class="text-xl font-bold text-white">Join Funngro As A Teen</h3>
+        </div>
+        <button data-close-modal class="text-gray-400 hover:text-white p-2 rounded-lg bg-gray-800" aria-label="Close Modal">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-300">
+        Enter your details below to activate your Teen Freelancer Profile and unlock verified projects today.
+      </p>
+
+      <form id="teen-signup-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Application Received! Welcome to Funngro Teens. Check your WhatsApp/Email for verification.'); document.getElementById('teen-apply-modal').classList.add('hidden');">
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Your Full Name</label>
+          <input type="text" required placeholder="e.g. Ishaan Sharma" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Age (13 - 19)</label>
+            <input type="number" min="13" max="19" required value="16" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 mb-1">Primary Skill</label>
+            <select class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+              <option>Content Writing</option>
+              <option>UI / Web Design</option>
+              <option>Social Media Reels</option>
+              <option>Video Editing</option>
+              <option>AI Annotation</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-300 mb-1">Mobile / WhatsApp Number</label>
+          <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-brand-navy border border-white/20 text-white text-sm focus:border-brand-green outline-none">
+        </div>
+
+        <div class="flex items-center gap-2 pt-2">
+          <input type="checkbox" id="parent-consent" required class="w-4 h-4 rounded text-brand-green bg-gray-800 border-gray-600 focus:ring-brand-green">
+          <label for="parent-consent" class="text-[11px] text-gray-400">
+            I confirm I have parental/guardian consent to work on paid freelance projects.
+          </label>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm bg-brand-green text-brand-navy hover:bg-emerald-400 transition-all cyber-glow">
+          Submit Fast-Track Application &rarr;
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/teen-hero-3d.js"></script>
+  <script>
+    // Interactive Earnings Calculator Logic
+    (function() {
+      const hoursSlider = document.getElementById('hours-slider');
+      const hoursDisplay = document.getElementById('hours-display');
+      const categorySelect = document.getElementById('calc-category');
+      const monthlyDisplay = document.getElementById('monthly-earnings-display');
+      const annualDisplay = document.getElementById('annual-earnings-display');
+      const projectsDisplay = document.getElementById('projects-estimate-display');
+
+      function updateCalculation() {
+        if (!hoursSlider || !categorySelect) return;
+        const hours = parseInt(hoursSlider.value, 10);
+        const hourlyRate = parseInt(categorySelect.value, 10);
+
+        hoursDisplay.textContent = `${hours} Hours`;
+
+        // Monthly calculation: hours per week * 4 weeks * hourly rate
+        const monthlyTotal = hours * 4 * hourlyRate;
+        const annualTotal = monthlyTotal * 12;
+        const estimatedTasks = Math.round(hours * 1.5);
+
+        monthlyDisplay.textContent = `₹${monthlyTotal.toLocaleString('en-IN')}`;
+        annualDisplay.textContent = `₹${annualTotal.toLocaleString('en-IN')}`;
+        projectsDisplay.textContent = `${estimatedTasks} - ${estimatedTasks + 4} Tasks`;
+      }
+
+      if (hoursSlider && categorySelect) {
+        hoursSlider.addEventListener('input', updateCalculation);
+        categorySelect.addEventListener('change', updateCalculation);
+        updateCalculation();
+      }
+    })();
+  </script>
+</body>
+</html>
